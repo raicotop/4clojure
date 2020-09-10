@@ -25,3 +25,10 @@
 (def sol-23 #(into '() %))
 (def sol-24 #(reduce + %))
 (def sol-25 #(filter odd? %))
+(def sol-26 (fn fib
+              [n]
+              (cond 
+                (= n 1) [1]
+                (= n 2) [1 1]
+                :else (let [prev (fib (dec n))]
+                        (conj prev (reduce + (take 2 (reverse prev))))))))
