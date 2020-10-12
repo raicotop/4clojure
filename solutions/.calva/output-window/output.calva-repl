@@ -16,131 +16,158 @@
 ;   - File URLs in stacktrace frames are peekable and clickable.
 clj::user=> 
 ; Jack-in done.
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: sol-2 in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:1:680) 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: use in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:138:5) 
 clj::solutions.core-test=> 
-nil
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: use in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:138:5) 
 clj::solutions.core-test=> 
-4
-clj::solutions.core-test=> (lein test)
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: lein in this context, compiling:(/home/janpotociar/4clojure/solutions/.calva/output-window/output.calva-repl:24:28) 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: use in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:138:5) 
 clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 0 tests containing 0 assertions.
-0 failures, 0 errors.
-{:test 0, :pass 0, :fail 0, :error 0, :type :summary}
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: comment in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:136:1) 
 clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 0 tests containing 0 assertions.
-0 failures, 0 errors.
-{:test 0, :pass 0, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 0 tests containing 0 assertions.
-0 failures, 0 errors.
-{:test 0, :pass 0, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-#'solutions.core-test/testing-all-solutions
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-FAIL in (testing-all-solutions) (form-init1922744975077460921.clj:9)
-2
-expected: (= (- 10 (* 2 3)) sol-2 2)
-  actual: (not (= 4 4 2))
-
-Ran 1 tests containing 2 assertions.
-1 failures, 0 errors.
-{:test 1, :pass 1, :fail 1, :error 0, :type :summary}
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: sol-3 in this context, compiling:(solutions/core_test.clj:11:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: sol-3 in this context, compiling:(solutions/core_test.clj:11:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: sol-3 in this context, compiling:(solutions/core_test.clj:11:6) 
-clj::solutions.core-test=> 
-nil
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: sol-3 in this context, compiling:(solutions/core_test.clj:11:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.ClassNotFoundException: clojure.test, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:2:4) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: sol-3 in this context, compiling:(solutions/core_test.clj:11:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: sol-3 in this context, compiling:(solutions/core_test.clj:11:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: sol-3 in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:1:680) 
-clj::solutions.core-test=> 
-4
-clj::solutions.core-test=> 
-#'solutions.core/sol-3
+#'solutions.core/sol-35
 clj::solutions.core=> 
 
 Testing solutions.core-test
 
-Ran 1 tests containing 3 assertions.
+Ran 1 tests containing 94 assertions.
 0 failures, 0 errors.
-
-Testing solutions.core-test
-
-Ran 1 tests containing 3 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 3, :fail 0, :error 0, :type :summary}
+{:test 1, :pass 94, :fail 0, :error 0, :type :summary}
+clj::solutions.core-test=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(solutions/core.clj:50:1) 
+clj::solutions.core-test=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(solutions/core.clj:50:1) 
+clj::solutions.core-test=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:50:1) 
+clj::solutions.core=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:50:1) 
+clj::solutions.core=> 
+#'solutions.core/sol-36
+clj::solutions.core=> 
+#'solutions.core/sol-36
+clj::solutions.core=> 
+; CompilerException java.lang.IllegalArgumentException: let requires a vector for its binding in solutions.core-test:136, compiling:(solutions/core_test.clj:136:15) 
+clj::solutions.core-test=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:50:1) 
+clj::solutions.core=> 
+#'solutions.core/sol-36
+clj::solutions.core=> 
+; CompilerException java.lang.IllegalArgumentException: let requires a vector for its binding in solutions.core-test:136, compiling:(solutions/core_test.clj:136:15) 
+clj::solutions.core-test=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:50:1) 
+clj::solutions.core=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(solutions/core.clj:50:1) 
+clj::solutions.core-test=> 
+#'solutions.core/sol-36
+clj::solutions.core=> 
+; CompilerException java.lang.RuntimeException: Too many arguments to def, compiling:(solutions/core.clj:50:1) 
+clj::solutions.core-test=> 
+#'solutions.core/sol-36
+clj::solutions.core=> 
+; CompilerException java.lang.IllegalArgumentException: let requires a vector for its binding in solutions.core-test:136, compiling:(solutions/core_test.clj:136:15) 
+clj::solutions.core-test=> 
+#'solutions.core/sol-36
+clj::solutions.core=> 
+; ArityException Wrong number of args (0) passed to: PersistentVector  clojure.lang.AFn.throwArity (AFn.java:429)
+clj::solutions.core=> 
+[x 7 y 3 z 1]
+clj::solutions.core=> 
+#'solutions.core/sol-36
+clj::solutions.core=> 
+; CompilerException java.lang.IllegalArgumentException: let requires a vector for its binding in solutions.core-test:136, compiling:(solutions/core_test.clj:136:15) 
+clj::solutions.core-test=> 
+[x 7 y 3 z 1]
+clj::solutions.core-test=> 
+; CompilerException java.lang.IllegalArgumentException: let requires a vector for its binding in solutions.core-test:136, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:136:15) 
+clj::solutions.core-test=> 
+[x 7 y 3 z 1]
+clj::solutions.core-test=> 
+; IllegalArgumentException let requires a vector for its binding in solutions.core-test:136  clojure.core/let (core.clj:4333)
+clj::solutions.core-test=> 
+#object[clojure.core$map$fn__4781 0xc2bf920 "clojure.core$map$fn__4781@c2bf920"]
+clj::solutions.core=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:53:1) 
+clj::solutions.core=> 
+; ClassCastException java.lang.Character cannot be cast to clojure.lang.IFn  solutions.core/eval8106 (form-init120563282894638415.clj:53)
+clj::solutions.core=> 
+[x 7 y 3 z 1]
+clj::solutions.core=> 
+7
+clj::solutions.core=> 
+x
+clj::solutions.core=> 
+; RuntimeException Map literal must contain an even number of forms  clojure.lang.Util.runtimeException (Util.java:221)
+clj::solutions.core=> 
+6
+clj::solutions.core=> 
+; IllegalArgumentException No value supplied for key: [x 7 y 3 z 1]  clojure.lang.PersistentHashMap.create (PersistentHashMap.java:77)
+clj::solutions.core=> 
+; IllegalArgumentException No value supplied for key: [x 7 y 3 z 1]  clojure.lang.PersistentHashMap.create (PersistentHashMap.java:77)
+clj::solutions.core=> 
+#'solutions.core/sol-36
+clj::solutions.core=> 
+; IllegalArgumentException No value supplied for key: [x 7 y 3 z 1]  clojure.lang.PersistentHashMap.create (PersistentHashMap.java:77)
+clj::solutions.core=> 
+{#object[clojure.core$apply 0x5002c3c0 "clojure.core$apply@5002c3c0"] [x 7 y 3 z 1]}
+clj::solutions.core=> 
+; ClassCastException java.lang.Character cannot be cast to clojure.lang.IFn  solutions.core/eval8202 (form-init120563282894638415.clj:54)
+clj::solutions.core=> 
+nil
+clj::solutions.core=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:54:1) 
+clj::solutions.core=> 
+; IllegalArgumentException No value supplied for key: [x 7 y 3 z 1]  clojure.lang.PersistentHashMap.create (PersistentHashMap.java:77)
+clj::solutions.core=> 
+{x 7, y 3, z 1}
+clj::solutions.core=> 
+{x 7, y 3, z 1}
+clj::solutions.core=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:53:1) 
+clj::solutions.core=> 
+nil
+clj::solutions.core=> 
+{x 7, y 3, z 1}
+clj::solutions.core=> 
+nil
+clj::solutions.core=> 
+#'solutions.core/sol-36
+clj::solutions.core=> 
+{x 7, y 3, z 1}
+clj::solutions.core=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:54:1) 
+clj::solutions.core=> 
+nil
+clj::solutions.core=> 
+7
+clj::solutions.core=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: sol in this context, compiling:(solutions/core_test.clj:137:23) 
 clj::solutions.core-test=> 
 
 Testing solutions.core-test
 
-Ran 1 tests containing 3 assertions.
+Ran 1 tests containing 97 assertions.
 0 failures, 0 errors.
-
-Testing solutions.core-test
-
-Ran 1 tests containing 3 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 3, :fail 0, :error 0, :type :summary}
+{:test 1, :pass 97, :fail 0, :error 0, :type :summary}
 clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Too many arguments to def, compiling:(solutions/core.clj:6:1) 
-clj::solutions.core-test=> 
-((:a :b :c))
+#'solutions.core/sol-37
 clj::solutions.core=> 
 
 Testing solutions.core-test
 
-FAIL in (testing-all-solutions) (core_test.clj:13)
-4
-expected: (= (list sol-4) (quote (:a :b :c)))
-  actual: (not (= (":a :b :c") (:a :b :c)))
-
-Ran 1 tests containing 4 assertions.
-1 failures, 0 errors.
-
-Testing solutions.core-test
-
-FAIL in (testing-all-solutions) (core_test.clj:13)
-4
-expected: (= (list sol-4) (quote (:a :b :c)))
-  actual: (not (= (":a :b :c") (:a :b :c)))
-
-Ran 1 tests containing 4 assertions.
-1 failures, 0 errors.
-{:test 1, :pass 3, :fail 1, :error 0, :type :summary}
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Too many arguments to def, compiling:(solutions/core.clj:6:1) 
+Ran 1 tests containing 98 assertions.
+0 failures, 0 errors.
+{:test 1, :pass 98, :fail 0, :error 0, :type :summary}
 clj::solutions.core-test=> 
 
 Testing solutions.core-test
 
-ERROR in (testing-all-solutions) (core_test.clj:13)
-4
-expected: (= (sol-4) (quote (:a :b :c)))
-  actual: java.lang.ClassCastException: clojure.lang.PersistentList cannot be cast to clojure.lang.IFn
- at solutions.core_test$fn__5564.invokeStatic (core_test.clj:13)
+ERROR in (testing-all-solutions) (AFn.java:429)
+38
+expected: (= (sol-38 1 8 3 4) 8)
+  actual: clojure.lang.ArityException: Wrong number of args (4) passed to: core/sol-38
+ at clojure.lang.AFn.throwArity (AFn.java:429)
+    clojure.lang.AFn.invoke (AFn.java:44)
+    solutions.core_test$fn__10513$fn__10916.invoke (core_test.clj:143)
+    solutions.core_test$fn__10513.invokeStatic (core_test.clj:143)
     solutions.core_test/fn (core_test.clj:5)
     clojure.test$test_var$fn__7983.invoke (test.clj:716)
     clojure.test$test_var.invokeStatic (test.clj:716)
@@ -153,11 +180,11 @@ expected: (= (sol-4) (quote (:a :b :c)))
     clojure.test$default_fixture.invoke (test.clj:682)
     clojure.test$test_vars.invokeStatic (test.clj:730)
     clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic (test.clj:757)
+    clojure.test$test_ns.invokeStatic
+ (test.clj:757)
     clojure.test$test_ns.invoke (test.clj:742)
     clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval
- (LazySeq.java:40)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
     clojure.lang.LazySeq.seq (LazySeq.java:49)
     clojure.lang.Cons.next (Cons.java:39)
     clojure.lang.RT.boundedLength (RT.java:1749)
@@ -168,41 +195,13 @@ expected: (= (sol-4) (quote (:a :b :c)))
     clojure.lang.RestFn.invoke (RestFn.java:408)
     clojure.test$run_tests.invokeStatic (test.clj:772)
     clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval5595.invokeStatic (core_test.clj:18)
-    solutions.core_test$eval5595.invoke (core_test.clj:18)
+    solutions.core_test$eval10928.invokeStatic (form-init120563282894638415.clj:151)
+    solutions.core_test$eval10928.invoke (form-init120563282894638415.clj:151)
     clojure.lang.Compiler.eval (Compiler.java:6927)
     clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.load (Compiler.java:7379)
-    clojure.lang.RT.loadResourceScript (RT.java:372)
-    clojure.lang.RT.loadResourceScript (RT.java:363)
-    clojure.lang.RT.load (RT.java:453)
-    clojure.lang.RT.load (RT.java:419)
-    clojure.core$load$fn__5677.invoke (core.clj:5893)
-
-    clojure.core$load.invokeStatic (core.clj:5892)
-    clojure.core$load.doInvoke (core.clj:5876)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.core$load_one.invokeStatic (core.clj:5697)
-    clojure.core$load_one.invoke (core.clj:5692)
-    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
-    clojure.core$load_lib.invokeStatic (core.clj:5736)
-    clojure.core$load_lib.doInvoke (core.clj:5717)
-    clojure.lang.RestFn.applyTo (RestFn.java:142)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.core$load_libs.invokeStatic (core.clj:5774)
-    clojure.core$load_libs.doInvoke (core.clj:5758)
-    clojure.lang.RestFn.applyTo (RestFn.java:137)
-    clojure.core$apply.invokeStatic (core.clj:650)
-    clojure.core$use.invokeStatic (core.clj:5860)
-    clojure.core$use.doInvoke (core.clj:5860)
-    clojure.lang.RestFn.invoke (RestFn.java:421)
-    solutions.core_test$eval5552.invokeStatic (form-init1922744975077460921.clj:17)
-    solutions.core_test$eval5552.invoke (form-init1922744975077460921.clj:17)
-
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6916)
     clojure.lang.Compiler.eval (Compiler.java:6890)
     clojure.core$eval.invokeStatic (core.clj:3105)
+
     clojure.core$eval.invoke (core.clj:3101)
     clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
     clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
@@ -217,26 +216,89 @@ expected: (= (sol-4) (quote (:a :b :c)))
     clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
     clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
     clojure.lang.RestFn.invoke (RestFn.java:425)
-    
-clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
+    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
     clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke (interruptible_eval.clj:222)
+    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
+ (interruptible_eval.clj:222)
     clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
     clojure.lang.AFn.run (AFn.java:22)
     java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
     java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
     java.lang.Thread.run (Thread.java:748)
 
-Ran 1 tests containing 4 assertions.
-0 failures, 1 errors.
+ERROR in (testing-all-solutions) (AFn.java:429)
+38
+expected: (= (sol-38 30 20) 30)
+  actual: clojure.lang.ArityException: Wrong number of args (2) passed to: core/sol-38
+ at clojure.lang.AFn.throwArity (AFn.java:429)
+    clojure.lang.AFn.invoke (AFn.java:36)
+    solutions.core_test$fn__10513$fn__10920.invoke (core_test.clj:144)
+    solutions.core_test$fn__10513.invokeStatic (core_test.clj:144)
+    solutions.core_test/fn (core_test.clj:5)
+    clojure.test$test_var$fn__7983.invoke (test.clj:716)
+    clojure.test$test_var.invokeStatic (test.clj:716)
+    clojure.test$test_var.invoke (test.clj:707)
+    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
+    clojure.test$default_fixture.invokeStatic (test.clj:686)
+    clojure.test$default_fixture.invoke (test.clj:682)
+    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
+    clojure.test$default_fixture.invokeStatic (test.clj:686)
+    clojure.test$default_fixture.invoke (test.clj:682)
+    clojure.test$test_vars.invokeStatic (test.clj:730)
+    clojure.test$test_all_vars.invokeStatic (test.clj:736)
+    clojure.test$test_ns.invokeStatic
+ (test.clj:757)
+    clojure.test$test_ns.invoke (test.clj:742)
+    clojure.core$map$fn__4785.invoke (core.clj:2646)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.boundedLength (RT.java:1749)
+    clojure.lang.RestFn.applyTo (RestFn.java:130)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.test$run_tests.invokeStatic (test.clj:767)
+    clojure.test$run_tests.doInvoke (test.clj:767)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.test$run_tests.invokeStatic (test.clj:772)
+    clojure.test$run_tests.invoke (test.clj:767)
+    solutions.core_test$eval10928.invokeStatic (form-init120563282894638415.clj:151)
+    solutions.core_test$eval10928.invoke (form-init120563282894638415.clj:151)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6917)
+    clojure.lang.Compiler.eval (Compiler.java:6890)
+    clojure.core$eval.invokeStatic (core.clj:3105)
 
-Testing solutions.core-test
+    clojure.core$eval.invoke (core.clj:3101)
+    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
+    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
+    clojure.main$repl$fn__7417.invoke (main.clj:258)
+    clojure.main$repl.invokeStatic (main.clj:258)
+    clojure.main$repl.doInvoke (main.clj:174)
+    clojure.lang.RestFn.invoke (RestFn.java:1523)
+    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
+    clojure.lang.AFn.applyToHelper (AFn.java:152)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invokeStatic (core.clj:646)
+    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
+    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
+    clojure.lang.RestFn.invoke (RestFn.java:425)
+    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
+    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
+    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
+ (interruptible_eval.clj:222)
+    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
+    clojure.lang.AFn.run (AFn.java:22)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    java.lang.Thread.run (Thread.java:748)
 
-ERROR in (testing-all-solutions) (core_test.clj:13)
-4
-expected: (= (sol-4) (quote (:a :b :c)))
-  actual: java.lang.ClassCastException: clojure.lang.PersistentList cannot be cast to clojure.lang.IFn
- at solutions.core_test$fn__5564.invokeStatic (core_test.clj:13)
+ERROR in (testing-all-solutions) (AFn.java:429)
+38
+expected: (= (sol-38 45 67 11) 67)
+  actual: clojure.lang.ArityException: Wrong number of args (3) passed to: core/sol-38
+ at clojure.lang.AFn.throwArity (AFn.java:429)
+    clojure.lang.AFn.invoke (AFn.java:40)
+    solutions.core_test$fn__10513.invokeStatic (core_test.clj:145)
     solutions.core_test/fn (core_test.clj:5)
     clojure.test$test_var$fn__7983.invoke (test.clj:716)
     clojure.test$test_var.invokeStatic (test.clj:716)
@@ -251,9 +313,9 @@ expected: (= (sol-4) (quote (:a :b :c)))
     clojure.test$test_all_vars.invokeStatic (test.clj:736)
     clojure.test$test_ns.invokeStatic (test.clj:757)
     clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval
- (LazySeq.java:40)
+    clojure.core$map$fn__4785.invoke
+ (core.clj:2646)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
     clojure.lang.LazySeq.seq (LazySeq.java:49)
     clojure.lang.Cons.next (Cons.java:39)
     clojure.lang.RT.boundedLength (RT.java:1749)
@@ -264,16 +326,16 @@ expected: (= (sol-4) (quote (:a :b :c)))
     clojure.lang.RestFn.invoke (RestFn.java:408)
     clojure.test$run_tests.invokeStatic (test.clj:772)
     clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval5597.invokeStatic (form-init1922744975077460921.clj:18)
-    solutions.core_test$eval5597.invoke (form-init1922744975077460921.clj:18)
+    solutions.core_test$eval10928.invokeStatic (form-init120563282894638415.clj:151)
+    solutions.core_test$eval10928.invoke (form-init120563282894638415.clj:151)
     clojure.lang.Compiler.eval (Compiler.java:6927)
     clojure.lang.Compiler.eval (Compiler.java:6917)
     clojure.lang.Compiler.eval (Compiler.java:6890)
     clojure.core$eval.invokeStatic (core.clj:3105)
     clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke
+    clojure.main$repl$read_eval_print__7408$fn__7411.invoke
  (main.clj:240)
+    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
     clojure.main$repl$fn__7417.invoke (main.clj:258)
     clojure.main$repl.invokeStatic (main.clj:258)
     clojure.main$repl.doInvoke (main.clj:174)
@@ -288,2258 +350,121 @@ expected: (= (sol-4) (quote (:a :b :c)))
     clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
     clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
     clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke
- (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
 
-Ran 1 tests containing 4 assertions.
-0 failures, 1 errors.
-{:test 1, :pass 3, :fail 0, :error 1, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 4 assertions.
-0 failures, 0 errors.
-
-Testing solutions.core-test
-
-Ran 1 tests containing 4 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 4, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-nil
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 4 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 4, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 4 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 4, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 4 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 4, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-; IllegalArgumentException Wrong number of args passed to keyword: :reload  clojure.lang.Keyword.throwArity (Keyword.java:97)
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: reload in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:21:2) 
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 4 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 4, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 5 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 5, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 6 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 6, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-true
-clj::solutions.core-test=> 
-true
-clj::solutions.core-test=> 
-(:a :b :c)
-clj::solutions.core-test=> 
-[:a :b :c]
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 7 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 7, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 8 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 8, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 9 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 9, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 10 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 10, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: sol-11 in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:31:32) 
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 11 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 11, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 11 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 11, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-; CompilerException clojure.lang.ArityException: Wrong number of args (3) passed to: test/is, compiling:(solutions/core_test.clj:33:6) 
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 14 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 14, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 18 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 18, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 19 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 19, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-; CompilerException clojure.lang.ArityException: Wrong number of args (4) passed to: test/is, compiling:(solutions/core_test.clj:39:6) 
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 23 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 23, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 27 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 27, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 30 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 30, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 31 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 31, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:62:6) 
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 32 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 32, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 35 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 35, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:66:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:66:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:66:6) 
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 35 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 35, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-ERROR in (testing-all-solutions) (core.clj:22)
-20
-expected: (= (sol-20 (list 1 2 3 4 5)) 4)
-  actual: java.lang.ClassCastException: clojure.lang.PersistentList cannot be cast to java.lang.Number
- at solutions.core$sol_20.invokeStatic (core.clj:22)
-    solutions.core$sol_20.invoke (core.clj:22)
-    solutions.core_test$fn__10638$fn__10789.invoke (core_test.clj:61)
-    solutions.core_test$fn__10638.invokeStatic (core_test.clj:61)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval10801.invokeStatic (form-init1922744975077460921.clj:70)
-    solutions.core_test$eval10801.invoke (form-init1922744975077460921.clj:70)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
     clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
     clojure.lang.AFn.run (AFn.java:22)
     java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
     java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
     java.lang.Thread.run (Thread.java:748)
 
-ERROR in (testing-all-solutions) (core.clj:22)
-20
-expected: (= (sol-20 ["a" "b" "c"]) "b")
-  actual: java.lang.ClassCastException: clojure.lang.PersistentVector cannot be cast to java.lang.Number
- at solutions.core$sol_20.invokeStatic (core.clj:22)
-    solutions.core$sol_20.invoke (core.clj:22)
-    solutions.core_test$fn__10638$fn__10793.invoke (core_test.clj:62)
-    solutions.core_test$fn__10638.invokeStatic (core_test.clj:62)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval10801.invokeStatic (form-init1922744975077460921.clj:70)
-    solutions.core_test$eval10801.invoke (form-init1922744975077460921.clj:70)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (core.clj:22)
-20
-expected: (= (sol-20 [[1 2] [3 4]]) [1 2])
-  actual: java.lang.ClassCastException: clojure.lang.PersistentVector cannot be cast to java.lang.Number
- at solutions.core$sol_20.invokeStatic (core.clj:22)
-    solutions.core$sol_20.invoke (core.clj:22)
-    solutions.core_test$fn__10638.invokeStatic (core_test.clj:63)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic (test.clj:757)
-    clojure.test$test_ns.invoke
- (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval10801.invokeStatic (form-init1922744975077460921.clj:70)
-    solutions.core_test$eval10801.invoke (form-init1922744975077460921.clj:70)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-    clojure.core$eval.invoke (core.clj:3101)
-
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-Ran 1 tests containing 38 assertions.
+Ran 1 tests containing 101 assertions.
 0 failures, 3 errors.
-{:test 1, :pass 35, :fail 0, :error 3, :type :summary}
+{:test 1, :pass 98, :fail 0, :error 3, :type :summary}
 clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-ERROR in (testing-all-solutions) (core.clj:22)
-20
-expected: (= (sol-20 (list 1 2 3 4 5)) 4)
-  actual: java.lang.ClassCastException: clojure.lang.PersistentList cannot be cast to java.lang.Number
- at solutions.core$sol_20.invokeStatic (core.clj:22)
-    solutions.core$sol_20.invoke (core.clj:22)
-    solutions.core_test$fn__10838$fn__10989.invoke (core_test.clj:61)
-    solutions.core_test$fn__10838.invokeStatic (core_test.clj:61)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval11001.invokeStatic (form-init1922744975077460921.clj:70)
-    solutions.core_test$eval11001.invoke (form-init1922744975077460921.clj:70)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (core.clj:22)
-20
-expected: (= (sol-20 ["a" "b" "c"]) "b")
-  actual: java.lang.ClassCastException: clojure.lang.PersistentVector cannot be cast to java.lang.Number
- at solutions.core$sol_20.invokeStatic (core.clj:22)
-    solutions.core$sol_20.invoke (core.clj:22)
-    solutions.core_test$fn__10838$fn__10993.invoke (core_test.clj:62)
-    solutions.core_test$fn__10838.invokeStatic (core_test.clj:62)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval11001.invokeStatic (form-init1922744975077460921.clj:70)
-    solutions.core_test$eval11001.invoke (form-init1922744975077460921.clj:70)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (core.clj:22)
-20
-expected: (= (sol-20 [[1 2] [3 4]]) [1 2])
-  actual: java.lang.ClassCastException: clojure.lang.PersistentVector cannot be cast to java.lang.Number
- at solutions.core$sol_20.invokeStatic (core.clj:22)
-    solutions.core$sol_20.invoke (core.clj:22)
-    solutions.core_test$fn__10838.invokeStatic (core_test.clj:63)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic (test.clj:757)
-    clojure.test$test_ns.invoke
- (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval11001.invokeStatic (form-init1922744975077460921.clj:70)
-    solutions.core_test$eval11001.invoke (form-init1922744975077460921.clj:70)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-    clojure.core$eval.invoke (core.clj:3101)
-
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-Ran 1 tests containing 38 assertions.
-0 failures, 3 errors.
-{:test 1, :pass 35, :fail 0, :error 3, :type :summary}
-clj::solutions.core-test=> 
-2
+; ArityException Wrong number of args (4) passed to: core/sol-38  clojure.lang.AFn.throwArity (AFn.java:429)
 clj::solutions.core=> 
-; ClassCastException clojure.lang.PersistentVector cannot be cast to java.lang.Number  solutions.core/eval11047 (form-init1922744975077460921.clj:24)
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: % in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:55:15) 
 clj::solutions.core=> 
-2
+#'solutions.core/sol-38
+clj::solutions.core=> 
+1
+clj::solutions.core=> 
+#'solutions.core/sol-38
+clj::solutions.core=> 
+8
 clj::solutions.core=> 
 
 Testing solutions.core-test
 
-Ran 1 tests containing 38 assertions.
+Ran 1 tests containing 101 assertions.
 0 failures, 0 errors.
-{:test 1, :pass 38, :fail 0, :error 0, :type :summary}
+{:test 1, :pass 101, :fail 0, :error 0, :type :summary}
 clj::solutions.core-test=> 
-; ArityException Wrong number of args (2) passed to: core/eval11416/fn--11417  clojure.lang.AFn.throwArity (AFn.java:429)
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: % in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:59:28) 
 clj::solutions.core=> 
-; ArityException Wrong number of args (2) passed to: core/eval11421/fn--11422  clojure.lang.AFn.throwArity (AFn.java:429)
-clj::solutions.core=> 
-; ArityException Wrong number of args (2) passed to: core/eval11426/fn--11427  clojure.lang.AFn.throwArity (AFn.java:429)
+#'solutions.core/sol-39
 clj::solutions.core=> 
 ; ArityException Wrong number of args (0) passed to: PersistentVector  clojure.lang.AFn.throwArity (AFn.java:429)
 clj::solutions.core=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: p0__11437# in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:25:3) 
+#'solutions.core/sol-39
 clj::solutions.core=> 
-; ArityException Wrong number of args (2) passed to: core/eval11461/fn--11462  clojure.lang.AFn.throwArity (AFn.java:429)
+(0 1 2)
+clj::solutions.core=> 
+#'solutions.core/sol-39
+clj::solutions.core=> 
+; ArityException Wrong number of args (0) passed to: PersistentVector  clojure.lang.AFn.throwArity (AFn.java:429)
+clj::solutions.core=> 
+#'solutions.core/sol-39
 clj::solutions.core=> 
 ; ArityException Wrong number of args (0) passed to: PersistentVector  clojure.lang.AFn.throwArity (AFn.java:429)
 clj::solutions.core=> 
-; ArityException Wrong number of args (3) passed to: core/eval11513/fn--11514  clojure.lang.AFn.throwArity (AFn.java:429)
+#'solutions.core/sol-39
 clj::solutions.core=> 
-; ArityException Wrong number of args (4) passed to: core/eval11519/fn--11520  clojure.lang.AFn.throwArity (AFn.java:429)
+(1 2 3)
+clj::solutions.core=> 
+#'solutions.core/sol-39
+clj::solutions.core=> 
+; IllegalArgumentException Don't know how to create ISeq from: java.lang.Long  clojure.lang.RT.seqFrom (RT.java:542)
+clj::solutions.core=> 
+#'solutions.core/sol-39
+clj::solutions.core=> 
+; ClassCastException java.lang.Long cannot be cast to clojure.lang.IFn  solutions.core/sol-39/fn--12392 (form-init120563282894638415.clj:59)
+clj::solutions.core=> 
+#'solutions.core/sol-39
 clj::solutions.core=> 
 ; ArityException Wrong number of args (0) passed to: PersistentVector  clojure.lang.AFn.throwArity (AFn.java:429)
+clj::solutions.core=> 
+; CompilerException java.lang.RuntimeException: Unable to resolve symbol: % in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:59:26) 
+clj::solutions.core=> 
+#'solutions.core/sol-39
+clj::solutions.core=> 
+; ArityException Wrong number of args (0) passed to: PersistentVector  clojure.lang.AFn.throwArity (AFn.java:429)
+clj::solutions.core=> 
+#'solutions.core/sol-39
+clj::solutions.core=> 
+; ArityException Wrong number of args (0) passed to: PersistentVector  clojure.lang.AFn.throwArity (AFn.java:429)
+clj::solutions.core=> 
+#'solutions.core/sol-39
+clj::solutions.core=> 
+; ClassCastException java.lang.Long cannot be cast to clojure.lang.IFn  solutions.core/sol-39/fn--12716 (form-init120563282894638415.clj:59)
+clj::solutions.core=> 
+#'solutions.core/sol-39
+clj::solutions.core=> 
+(1 2 3)
+clj::solutions.core=> 
+#'solutions.core/sol-39
 clj::solutions.core=> 
 ; RuntimeException Unable to convert: class java.lang.Long to Object[]  clojure.lang.Util.runtimeException (Util.java:221)
 clj::solutions.core=> 
-[1]
+#'solutions.core/sol-39
 clj::solutions.core=> 
-; ArityException Wrong number of args (2) passed to: core/eval11669/fn--11670  clojure.lang.AFn.throwArity (AFn.java:429)
+([1] [2] [3])
 clj::solutions.core=> 
-; ArityException Wrong number of args (2) passed to: core/eval11674/fn--11675  clojure.lang.AFn.throwArity (AFn.java:429)
+#'solutions.core/sol-39
 clj::solutions.core=> 
-[1 2]
+([1 :a] [2 :b] [3 :c])
+clj::solutions.core=> 
+#'solutions.core/sol-39
+clj::solutions.core=> 
+(1 :a 2 :b 3 :c)
+clj::solutions.core=> 
+#'solutions.core/sol-39
+clj::solutions.core=> 
+(1 :a 2 :b 3 :c)
 clj::solutions.core=> 
 
 Testing solutions.core-test
 
-Ran 1 tests containing 42 assertions.
+Ran 1 tests containing 105 assertions.
 0 failures, 0 errors.
-{:test 1, :pass 42, :fail 0, :error 0, :type :summary}
+{:test 1, :pass 105, :fail 0, :error 0, :type :summary}
 clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:75:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:75:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:75:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:75:6) 
-clj::solutions.core-test=> 
+#'solutions.core/sol-39
+clj::solutions.core=> 
 
 Testing solutions.core-test
 
-Ran 1 tests containing 42 assertions.
+Ran 1 tests containing 105 assertions.
 0 failures, 0 errors.
-{:test 1, :pass 42, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: .size in this context, compiling:(solutions/core.clj:24:1) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: .size in this context, compiling:(solutions/core.clj:24:1) 
-clj::solutions.core-test=> 
-3
-clj::solutions.core=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: .length in this context, compiling:(solutions/core.clj:24:1) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: .length in this context, compiling:(solutions/core.clj:24:1) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: .length in this context, compiling:(solutions/core.clj:24:1) 
-clj::solutions.core-test=> 
-; ArityException Wrong number of args (2) passed to: core/inc  clojure.lang.AFn.throwArity (AFn.java:429)
-clj::solutions.core=> 
-; ClassCastException java.lang.Long cannot be cast to clojure.lang.IFn  clojure.core/map/fn--4785 (core.clj:2644)
-clj::solutions.core=> 
-; ArityException Wrong number of args (1) passed to: core/eval13567/fn--13568  clojure.lang.AFn.throwArity (AFn.java:429)
-clj::solutions.core=> 
-; ArityException Wrong number of args (1) passed to: core/eval13571/fn--13572  clojure.lang.AFn.throwArity (AFn.java:429)
-clj::solutions.core=> 
-(2 3 4)
-clj::solutions.core=> 
-(1 1 1)
-clj::solutions.core=> 
-3
-clj::solutions.core=> 
-
-Testing solutions.core-test
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (1 2 3 3 1))) 5)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__13845$fn__14024.invoke (core_test.clj:70)
-    solutions.core_test$fn__13845.invokeStatic (core_test.clj:70)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval14044.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval14044.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 "Hello World") 11)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__13845$fn__14028.invoke (core_test.clj:71)
-    solutions.core_test$fn__13845.invokeStatic (core_test.clj:71)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval14044.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval14044.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 [[1 2] [3 4] [5 6]]) 3)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__13845$fn__14032.invoke (core_test.clj:72)
-    solutions.core_test$fn__13845.invokeStatic (core_test.clj:72)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval14044.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval14044.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (13))) 1)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__13845$fn__14036.invoke (core_test.clj:73)
-    solutions.core_test$fn__13845.invokeStatic (core_test.clj:73)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval14044.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval14044.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (:a :b :c))) 3)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__13845.invokeStatic (core_test.clj:74)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke
- (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval14044.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval14044.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke
- (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke (interruptible_eval.clj:222)
-
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-Ran 1 tests containing 47 assertions.
-0 failures, 5 errors.
-{:test 1, :pass 42, :fail 0, :error 5, :type :summary}
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:81:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:81:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:81:6) 
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (1 2 3 3 1))) 5)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__14870$fn__15049.invoke (core_test.clj:70)
-    solutions.core_test$fn__14870.invokeStatic (core_test.clj:70)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15069.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15069.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 "Hello World") 11)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__14870$fn__15053.invoke (core_test.clj:71)
-    solutions.core_test$fn__14870.invokeStatic (core_test.clj:71)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15069.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15069.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 [[1 2] [3 4] [5 6]]) 3)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__14870$fn__15057.invoke (core_test.clj:72)
-    solutions.core_test$fn__14870.invokeStatic (core_test.clj:72)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15069.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15069.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (13))) 1)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__14870$fn__15061.invoke (core_test.clj:73)
-    solutions.core_test$fn__14870.invokeStatic (core_test.clj:73)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15069.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15069.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (:a :b :c))) 3)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__14870.invokeStatic (core_test.clj:74)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke
- (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15069.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15069.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke
- (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke (interruptible_eval.clj:222)
-
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-Ran 1 tests containing 47 assertions.
-0 failures, 5 errors.
-{:test 1, :pass 42, :fail 0, :error 5, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (1 2 3 3 1))) 5)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__15222$fn__15401.invoke (core_test.clj:70)
-    solutions.core_test$fn__15222.invokeStatic (core_test.clj:70)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15421.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15421.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 "Hello World") 11)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__15222$fn__15405.invoke (core_test.clj:71)
-    solutions.core_test$fn__15222.invokeStatic (core_test.clj:71)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15421.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15421.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 [[1 2] [3 4] [5 6]]) 3)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__15222$fn__15409.invoke (core_test.clj:72)
-    solutions.core_test$fn__15222.invokeStatic (core_test.clj:72)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15421.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15421.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (13))) 1)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__15222$fn__15413.invoke (core_test.clj:73)
-    solutions.core_test$fn__15222.invokeStatic (core_test.clj:73)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15421.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15421.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (:a :b :c))) 3)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__15222.invokeStatic (core_test.clj:74)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke
- (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15421.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15421.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke
- (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke (interruptible_eval.clj:222)
-
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-Ran 1 tests containing 47 assertions.
-0 failures, 5 errors.
-{:test 1, :pass 42, :fail 0, :error 5, :type :summary}
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (1 2 3 3 1))) 5)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__15464$fn__15643.invoke (core_test.clj:70)
-    solutions.core_test$fn__15464.invokeStatic (core_test.clj:70)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15663.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15663.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 "Hello World") 11)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__15464$fn__15647.invoke (core_test.clj:71)
-    solutions.core_test$fn__15464.invokeStatic (core_test.clj:71)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15663.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15663.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 [[1 2] [3 4] [5 6]]) 3)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__15464$fn__15651.invoke (core_test.clj:72)
-    solutions.core_test$fn__15464.invokeStatic (core_test.clj:72)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15663.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15663.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (13))) 1)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__15464$fn__15655.invoke (core_test.clj:73)
-    solutions.core_test$fn__15464.invokeStatic (core_test.clj:73)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic
- (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15663.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15663.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke
- (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-ERROR in (testing-all-solutions) (AFn.java:429)
-22
-expected: (= (sol-22 (quote (:a :b :c))) 3)
-  actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core/sol-22
- at clojure.lang.AFn.throwArity (AFn.java:429)
-    clojure.lang.AFn.invoke (AFn.java:32)
-    solutions.core_test$fn__15464.invokeStatic (core_test.clj:74)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke
- (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval15663.invokeStatic (form-init1922744975077460921.clj:81)
-    solutions.core_test$eval15663.invoke (form-init1922744975077460921.clj:81)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke
- (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke (interruptible_eval.clj:222)
-
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-Ran 1 tests containing 47 assertions.
-0 failures, 5 errors.
-{:test 1, :pass 42, :fail 0, :error 5, :type :summary}
-clj::solutions.core-test=> 
-; ArityException Wrong number of args (1) passed to: core/sol-22  clojure.lang.AFn.throwArity (AFn.java:429)
-clj::solutions.core=> 
-#'solutions.core/sol-22
-clj::solutions.core=> 
-5
-clj::solutions.core=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 47 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 47, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-(0 1 2 3 4 5 6 7 8 9)
-clj::solutions.core=> 
-()
-clj::solutions.core=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: % in this context, compiling:(solutions/core.clj:25:54) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: % in this context, compiling:(solutions/core.clj:25:33) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: % in this context, compiling:(solutions/core.clj:25:33) 
-clj::solutions.core-test=> 
-; IllegalStateException Attempting to call unbound fn: #'solutions.core/sol-23  clojure.lang.Var$Unbound.throwArity (Var.java:43)
-clj::solutions.core=> 
-#'solutions.core/sol-23
-clj::solutions.core=> 
-; IndexOutOfBoundsException   clojure.lang.PersistentVector.arrayFor (PersistentVector.java:158)
-clj::solutions.core=> 
-#'solutions.core/sol-23
-clj::solutions.core=> 
-(5 4 3 2)
-clj::solutions.core=> 
-#'solutions.core/sol-23
-clj::solutions.core=> 
-(5 4 3 2 1)
-clj::solutions.core=> 
-
-Testing solutions.core-test
-
-ERROR in (testing-all-solutions) (RT.java:888)
-23
-expected: (= (sol-23 (sorted-set 5 7 2 7)) (quote (7 5 2)))
-  actual: java.lang.UnsupportedOperationException: nth not supported on this type: PersistentTreeSet
- at clojure.lang.RT.nthFrom (RT.java:888)
-    clojure.lang.RT.nth (RT.java:854)
-    solutions.core$sol_23$fn__16907.invoke (core.clj:25)
-    clojure.core$map$fn__4785.invoke (core.clj:2644)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.LazySeq.equiv (LazySeq.java:100)
-    clojure.lang.Util.pcequiv (Util.java:124)
-    clojure.lang.Util.equiv (Util.java:32)
-    clojure.core$_EQ_.invokeStatic (core.clj:774)
-    clojure.core$_EQ_.invoke (core.clj:764)
-    clojure.lang.AFn.applyToHelper (AFn.java:156)
-    clojure.lang.RestFn.applyTo (RestFn.java:132)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$apply.invoke (core.clj:641)
-    solutions.core_test$fn__16927$fn__17130.invoke (core_test.clj:77)
-    solutions.core_test$fn__16927.invokeStatic (core_test.clj:77)
-    solutions.core_test/fn (core_test.clj:5)
-    clojure.test$test_var$fn__7983.invoke
- (test.clj:716)
-    clojure.test$test_var.invokeStatic (test.clj:716)
-    clojure.test$test_var.invoke (test.clj:707)
-    clojure.test$test_vars$fn__8005$fn__8010.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars$fn__8005.invoke (test.clj:734)
-    clojure.test$default_fixture.invokeStatic (test.clj:686)
-    clojure.test$default_fixture.invoke (test.clj:682)
-    clojure.test$test_vars.invokeStatic (test.clj:730)
-    clojure.test$test_all_vars.invokeStatic (test.clj:736)
-    clojure.test$test_ns.invokeStatic (test.clj:757)
-    clojure.test$test_ns.invoke (test.clj:742)
-    clojure.core$map$fn__4785.invoke (core.clj:2646)
-    clojure.lang.LazySeq.sval (LazySeq.java:40)
-    clojure.lang.LazySeq.seq (LazySeq.java:49)
-    clojure.lang.Cons.next (Cons.java:39)
-    clojure.lang.RT.boundedLength (RT.java:1749)
-    clojure.lang.RestFn.applyTo (RestFn.java:130)
-    clojure.core$apply.invokeStatic (core.clj:648)
-
-    clojure.test$run_tests.invokeStatic (test.clj:767)
-    clojure.test$run_tests.doInvoke (test.clj:767)
-    clojure.lang.RestFn.invoke (RestFn.java:408)
-    clojure.test$run_tests.invokeStatic (test.clj:772)
-    clojure.test$run_tests.invoke (test.clj:767)
-    solutions.core_test$eval17138.invokeStatic (form-init1922744975077460921.clj:85)
-    solutions.core_test$eval17138.invoke (form-init1922744975077460921.clj:85)
-    clojure.lang.Compiler.eval (Compiler.java:6927)
-    clojure.lang.Compiler.eval (Compiler.java:6917)
-    clojure.lang.Compiler.eval (Compiler.java:6890)
-    clojure.core$eval.invokeStatic (core.clj:3105)
-    clojure.core$eval.invoke (core.clj:3101)
-    clojure.main$repl$read_eval_print__7408$fn__7411.invoke (main.clj:240)
-    clojure.main$repl$read_eval_print__7408.invoke (main.clj:240)
-    clojure.main$repl$fn__7417.invoke (main.clj:258)
-    clojure.main$repl.invokeStatic (main.clj:258)
-    clojure.main$repl.doInvoke (main.clj:174)
-    clojure.lang.RestFn.invoke (RestFn.java:1523)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__648.invoke
- (interruptible_eval.clj:87)
-    clojure.lang.AFn.applyToHelper (AFn.java:152)
-    clojure.lang.AFn.applyTo (AFn.java:144)
-    clojure.core$apply.invokeStatic (core.clj:646)
-    clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1881)
-    clojure.core$with_bindings_STAR_.doInvoke (core.clj:1881)
-    clojure.lang.RestFn.invoke (RestFn.java:425)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:85)
-    clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:55)
-    clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__693$fn__696.invoke (interruptible_eval.clj:222)
-    clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__688.invoke (interruptible_eval.clj:190)
-    clojure.lang.AFn.run (AFn.java:22)
-    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
-    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
-    java.lang.Thread.run (Thread.java:748)
-
-
-Ran 1 tests containing 50 assertions.
-0 failures, 1 errors.
-{:test 1, :pass 49, :fail 0, :error 1, :type :summary}
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:85:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:85:6) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: run-tests in this context, compiling:(/home/janpotociar/4clojure/solutions/test/solutions/core_test.clj:85:6) 
-clj::solutions.core-test=> 
-#'solutions.core/sol-23
-clj::solutions.core=> 
-; IndexOutOfBoundsException   clojure.lang.PersistentVector.arrayFor (PersistentVector.java:158)
-clj::solutions.core=> 
-#'solutions.core/sol-23
-clj::solutions.core=> 
-(5 4 3 2 1)
-clj::solutions.core=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 50 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 50, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-#'solutions.core/sol-23
-clj::solutions.core=> 
-(5 4 3 2 1)
-clj::solutions.core=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 50 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 50, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-#'solutions.core/sol-23
-clj::solutions.core=> 
-; ArityException Wrong number of args (1) passed to: core/sol-23  clojure.lang.AFn.throwArity (AFn.java:429)
-clj::solutions.core=> 
-#'solutions.core/sol-23
-clj::solutions.core=> 
-(5 4 3 2 1)
-clj::solutions.core=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 55 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 55, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: __ in this context, compiling:(solutions/core_test.clj:86:13) 
-clj::solutions.core-test=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: __ in this context, compiling:(solutions/core_test.clj:86:13) 
-clj::solutions.core-test=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 59 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 59, :fail 0, :error 0, :type :summary}
-clj::solutions.core-test=> 
-#'solutions.core/sol-26
-clj::solutions.core=> 
-; CompilerException java.lang.RuntimeException: Unable to resolve symbol: fib in this context, compiling:(/home/janpotociar/4clojure/solutions/src/solutions/core.clj:36:1) 
-clj::solutions.core=> 
-[1 1]
-clj::solutions.core=> 
-[1 1 2]
-clj::solutions.core=> 
-[1 1 2 3 5]
-clj::solutions.core=> 
-[1 1 2 3 5 8 13 21]
-clj::solutions.core=> 
-
-Testing solutions.core-test
-
-Ran 1 tests containing 62 assertions.
-0 failures, 0 errors.
-{:test 1, :pass 62, :fail 0, :error 0, :type :summary}
+{:test 1, :pass 105, :fail 0, :error 0, :type :summary}
 clj::solutions.core-test=> 
