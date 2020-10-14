@@ -147,7 +147,62 @@
     (is (= (sol-39 [1 2 3] [:a :b :c]) '(1 :a 2 :b 3 :c)))
     (is (= (sol-39 [1 2] [3 4 5 6]) '(1 3 2 4)))
     (is (= (sol-39 [1 2 3 4] [5]) [1 5]))
-    (is (= (sol-39 [30 20] [25 15]) [30 25 20 15]))))
+    (is (= (sol-39 [30 20] [25 15]) [30 25 20 15])))
+  (testing 40
+    (is (= (sol-40 0 [1 2 3]) [1 0 2 0 3]))
+    (is (= (apply str (sol-40 ", " ["one" "two" "three"])) "one, two, three"))
+    (is (= (sol-40 :z [:a :b :c :d]) [:a :z :b :z :c :z :d])))
+  (testing 41 
+    (is (= (sol-41 [1 2 3 4 5 6 7 8] 3) [1 2 4 5 7 8]))
+    (is (= (sol-41 [:a :b :c :d :e :f] 2) [:a :c :e]))
+    (is (= (sol-41 [1 2 3 4 5 6] 4) [1 2 3 5 6])))
+  (testing 42
+    (is (= (sol-42 1) 1))
+    (is (= (sol-42 3) 6))
+    (is (= (sol-42 5) 120))
+    (is (= (sol-42 8) 40320)))
+  (testing 43
+    (is (= (sol-43 [1 2 3 4 5 6] 2) '((1 3 5) (2 4 6))))
+    (is (= (sol-43 (range 9) 3) '((0 3 6) (1 4 7) (2 5 8))))
+    (is (= (sol-43 (range 10) 5) '((0 5) (1 6) (2 7) (3 8) (4 9)))))
+  (testing 44
+    (is (= (sol-44 2 [1 2 3 4 5]) '(3 4 5 1 2)))
+    (is (= (sol-44 -2 [1 2 3 4 5]) '(4 5 1 2 3)))
+    (is (= (sol-44 6 [1 2 3 4 5]) '(2 3 4 5 1)))
+    (is (= (sol-44 1 '(:a :b :c)) '(:b :c :a)))
+    (is (= (sol-44 -4 '(:a :b :c)) '(:c :a :b))))
+  (testing 45
+    (is (= sol-45 (take 5 (iterate #(+ 3 %) 1)))))
+  (testing 46
+    (is (= 3 ((sol-46 nth) 2 [1 2 3 4 5])))
+    (is (= true ((sol-46 >) 7 8)))
+    (is (= 4 ((sol-46 quot) 2 8)))
+    (is (= [1 2 3] ((sol-46 take) [1 2 3 4 5] 3))))
+  (testing 47
+    (is (contains? #{4 5 6} sol-47))
+    (is (contains? [1 1 1 1 1] sol-47))
+    (is (contains? {4 :a 2 :b} sol-47))
+    (is (not (contains? [1 2 4] sol-47))))
+  (testing 48
+    (is (= sol-48 (some #{2 7 6} [5 6 7 8])))
+    (is (= sol-48 (some #(when (even? %) %) [5 6 7 8]))))
+  (testing 49
+    (is (= (sol-49 3 [1 2 3 4 5 6]) [[1 2 3] [4 5 6]]))
+    (is (= (sol-49 1 [:a :b :c :d]) [[:a] [:b :c :d]]))
+    (is (= (sol-49 2 [[1 2] [3 4] [5 6]]) [[[1 2] [3 4]] [[5 6]]])))
+  (testing 50
+    (is (= (set (sol-50 [1 :a 2 :b 3 :c])) #{[1 2 3] [:a :b :c]}))
+    (is (= (set (sol-50 [:a "foo"  "bar" :b])) #{[:a :b] ["foo" "bar"]}))
+    (is (= (set (sol-50 [[1 2] :a [3 4] 5 6 :b])) #{[[1 2] [3 4]] [:a :b] [5 6]})))
+  (testing 51
+    (is (= [1 2 [3 4 5] [1 2 3 4 5]] (let [[a b & c :as d] sol-51] [a b c d]))))
+  (testing 52
+    (is (= [2 4] (let [[a b c d e] [0 1 2 3 4]] [c e]))))
+  (testing 53
+    (is (= (sol-53 [1 0 1 2 3 0 4 5]) [0 1 2 3]))
+    (is (= (sol-53 [5 6 1 3 2 7]) [5 6]))
+    (is (= (sol-53 [2 3 3 4 5]) [3 4 5]))
+    (is (= (sol-53 [7 6 5 4]) []))))
  
 (comment 
   (do

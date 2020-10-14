@@ -27,7 +27,7 @@
 (def sol-25 #(filter odd? %))
 (def sol-26 (fn fib
               [n]
-              (cond 
+              (cond
                 (= n 1) [1]
                 (= n 2) [1 1]
                 :else (let [prev (fib (dec n))]
@@ -54,3 +54,42 @@
 (def sol-38 (fn [& args]
               (->> args sort last)))
 (def sol-39 #(mapcat vector %1 %2))
+(def sol-40 (fn [separator sequence]
+              (rest (interleave (repeat separator) sequence))))
+(def sol-41 (fn [coll n]
+              (->> (range (count coll))
+                   (remove #(= 0 (rem (inc %) n)))
+                   (map #(coll %)))))
+(def sol-42 #(apply * (range 1 (inc %))))
+(def sol-43
+  (fn [coll n]
+    (->> (range n)
+         (map #(range % (count coll) n))
+         (map #(map (fn [i] (nth coll i)) %)))))
+(def sol-44 (fn [n coll]
+              (->> (range (count coll))
+                   (map #(mod (+ % n) (count coll)))
+                   (map #(nth coll %)))))
+(def sol-45 [1 4 7 10 13])
+(def sol-46 #(fn [l r] (% r l)))
+(def sol-47 4)
+(def sol-48 6)
+(def sol-49 (fn [n s] [(take n s) (drop n s)]))
+(def sol-50 #(vals (group-by type %)))
+(def sol-51 [1 2 3 4 5])
+(def sol-52 '[c e])
+(def sol-53 #(->> (range (dec (count %)))
+                  (map (fn [i] [i (< (% i) (% (inc i)))]))
+                  (partition-by second)
+                  (filter (fn [x] (= true (second (first x)))))
+                  (sort-by count >)
+                  (first)
+                  ((fn [l] (if (seq? l)
+                             (->> [(first (first l)) (inc (inc (first (last l))))]
+                                  (apply range)
+                                  (map (fn [i] (% i))))
+                             [])))))
+                                 
+
+(sol-53 [7 6 5 4])
+(sol-53 [1 0 1 2 3 0 4 5])
