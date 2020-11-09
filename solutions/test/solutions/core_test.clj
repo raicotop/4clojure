@@ -202,7 +202,35 @@
     (is (= (sol-53 [1 0 1 2 3 0 4 5]) [0 1 2 3]))
     (is (= (sol-53 [5 6 1 3 2 7]) [5 6]))
     (is (= (sol-53 [2 3 3 4 5]) [3 4 5]))
-    (is (= (sol-53 [7 6 5 4]) []))))
+    (is (= (sol-53 [7 6 5 4]) [])))
+  (testing 54
+    (is (= (sol-54 3 (range 9)) '((0 1 2) (3 4 5) (6 7 8))))
+    (is (= (sol-54 2 (range 8)) '((0 1) (2 3) (4 5) (6 7))))
+    (is (= (sol-54 3 (range 8)) '((0 1 2) (3 4 5)))))
+  (testing 55
+    (is (= (sol-55 [1 1 2 3 2 1 1]) {1 4, 2 2, 3 1}))
+    (is (= (sol-55 [:b :a :b :a :b]) {:a 2, :b 3}))
+    (is (= (sol-55 '([1 2] [1 3] [1 3])) {[1 2] 1, [1 3] 2})))
+  (testing 56
+    (is (= (sol-56 [1 2 1 3 1 2 4]) [1 2 3 4]))
+    (is (= (sol-56 [:a :a :b :b :c :c]) [:a :b :c]))
+    (is (= (sol-56 '([2 4] [1 2] [1 3] [1 3])) '([2 4] [1 2] [1 3])))
+    (is (= (sol-56 (range 50)) (range 50))))
+  (testing 57
+    (is (= sol-57 ((fn foo [x] (when (> x 0) (conj (foo (dec x)) x))) 5))))
+  (testing 58
+    (is (= [3 2 1] ((sol-58 rest reverse) [1 2 3 4])))
+    (is (= 5 ((sol-58 (partial + 3) second) [1 2 3 4])))
+    (is (= true ((sol-58 zero? #(mod % 8) +) 3 5 7 9)))
+    (is (= "HELLO" ((sol-58 #(.toUpperCase %) #(apply str %) take) 5 "hello world"))))
+  (testing 59
+    (is (= [21 6 1] ((sol-59 + max min) 2 3 5 1 6 4)))
+    (is (= ["HELLO" 5] ((sol-59 #(.toUpperCase %) count) "hello")))
+    (is (= [2 6 4] ((sol-59 :a :c :b) {:a 2, :b 4, :c 6, :d 8 :e 10}))))
+  (testing 60
+    (is (= (take 5 (sol-60 + (range))) [0 1 3 6 10]))
+    (is (= (sol-60 conj [1] [2 3 4]) [[1] [1 2] [1 2 3] [1 2 3 4]]))
+    (is (= (last (sol-60 * 2 [3 4 5])) (reduce * 2 [3 4 5]) 120))))
  
 (comment 
   (do

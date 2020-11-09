@@ -89,7 +89,38 @@
                                   (apply range)
                                   (map (fn [i] (% i))))
                              [])))))
-                                 
+(def sol-54 (fn [n xs]
+              (->> (range (* (quot (count xs) n) n))
+                   (partition-by #(quot % n))
+                   (map #(map (fn [n] (nth xs n)) %)))))
+(def sol-55 (fn [xs]
+              (->> (group-by identity xs)
+                   (map (fn [[k v]] {k (count v)}))
+                   (apply conj))))
+(def sol-56 #(reduce (fn [head x] (if ((set head) x) head (conj head x))) [] %))
+(def sol-57 [5 4 3 2 1])
+(def sol-58 (fn [& fs] (reduce (fn [f g] #(f (apply g %&))) fs)))
+(def sol-59 (fn [& fs] (fn [& args] (map #(apply % args) fs))))
+(def sol-60 (fn 
+              ([f coll] 
+               (let [reductions-my (fn reductions-my 
+                                     [f coll n]
+                                     (if                                               
+                                       (and (not (= (inc n) (count (take (inc n) coll)))) 
+                                            (= n (count coll)))
+                                       [(apply f (take n coll))]
+                                       (lazy-seq (cons (apply f (take n coll)) 
+                                                       (reductions-my f coll (inc n))))))]
+                 (reductions-my f coll 1)))
+              ([f init coll] 
+               (reduce (fn [prev x]
+                         (if (empty? prev)
+                           [x]
+                           (conj prev (f (last prev) x)))) 
+                       [init]
+                       coll))))        
+(take 5 (sol-60 + (range)))
+(sol-60 conj [1] [2 3 4])
+(sol-60 * [2 3 4])
 
-(sol-53 [7 6 5 4])
-(sol-53 [1 0 1 2 3 0 4 5])
+(take 4 [1 2 3])
