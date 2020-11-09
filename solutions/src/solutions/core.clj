@@ -101,26 +101,30 @@
 (def sol-57 [5 4 3 2 1])
 (def sol-58 (fn [& fs] (reduce (fn [f g] #(f (apply g %&))) fs)))
 (def sol-59 (fn [& fs] (fn [& args] (map #(apply % args) fs))))
-(def sol-60 (fn 
-              ([f coll] 
-               (let [reductions-my (fn reductions-my 
-                                     [f coll n]
-                                     (if                                               
-                                       (and (not (= (inc n) (count (take (inc n) coll)))) 
-                                            (= n (count coll)))
-                                       [(apply f (take n coll))]
-                                       (lazy-seq (cons (apply f (take n coll)) 
-                                                       (reductions-my f coll (inc n))))))]
-                 (reductions-my f coll 1)))
-              ([f init coll] 
-               (reduce (fn [prev x]
-                         (if (empty? prev)
-                           [x]
-                           (conj prev (f (last prev) x)))) 
-                       [init]
-                       coll))))        
-(take 5 (sol-60 + (range)))
-(sol-60 conj [1] [2 3 4])
-(sol-60 * [2 3 4])
+(def sol-60 (fn r
+              ([f xs] (r f (first xs) (rest xs)))
+              ([f v xs]
+               (lazy-seq
+                (cons v
+                      (if (empty? xs) [] (r f (f v (first xs)) (rest xs))))))))        
+(def sol-61 #(apply hash-map (interleave %1 %2)))
+(def sol-62 (fn r [f v]
+              (lazy-seq
+               (cons v (r f (f v))))))
+(def sol-63 (fn [f s]
+              (->> (map #(hash-map (f %) [%]) s)
+                   (reduce #(merge-with into %1 %2)))))
+(def sol-64 +)
+(def sol-65 (fn [a]
+              (let [base (empty a)]
+                (cond
+                  (= base {}) :map
+                  (= base #{}) :set
+                  (= base '()) (if (reversible? a) :vector :list)))))
 
-(take 4 [1 2 3])
+(map sol-65 [{} #{} [] ()])
+
+(take-last 2 [1 2])
+
+(count (conj {} [1 2] [1 3]))
+

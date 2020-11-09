@@ -230,7 +230,31 @@
   (testing 60
     (is (= (take 5 (sol-60 + (range))) [0 1 3 6 10]))
     (is (= (sol-60 conj [1] [2 3 4]) [[1] [1 2] [1 2 3] [1 2 3 4]]))
-    (is (= (last (sol-60 * 2 [3 4 5])) (reduce * 2 [3 4 5]) 120))))
+    (is (= (last (sol-60 * 2 [3 4 5])) (reduce * 2 [3 4 5]) 120)))
+  (testing 61
+    (is (= (sol-61 [:a :b :c] [1 2 3]) {:a 1, :b 2, :c 3}))
+    (is (= (sol-61 [1 2 3 4] ["one" "two" "three"]) {1 "one", 2 "two", 3 "three"}))
+    (is (= (sol-61 [:foo :bar] ["foo" "bar" "baz"]) {:foo "foo", :bar "bar"})))
+  (testing 62
+    (is (= (take 5 (sol-62 #(* 2 %) 1)) [1 2 4 8 16]))
+    (is (= (take 100 (sol-62 inc 0)) (take 100 (range))))
+    (is (= (take 9 (sol-62 #(inc (mod % 3)) 1)) (take 9 (cycle [1 2 3])))))
+  (testing 63
+    (is (= (sol-63 #(> % 5) [1 3 6 8]) {false [1 3], true [6 8]}))
+    (is (= (sol-63 #(apply / %) [[1 2] [2 4] [4 6] [3 6]])
+           {1/2 [[1 2] [2 4] [3 6]], 2/3 [[4 6]]}))
+    (is (= (sol-63 count [[1] [1 2] [3] [1 2 3] [2 3]])
+           {1 [[1] [3]], 2 [[1 2] [2 3]], 3 [[1 2 3]]})))
+  (testing 64
+    (is (= 15 (reduce sol-64 [1 2 3 4 5])))
+    (is (=  0 (reduce sol-64 [])))
+    (is (=  6 (reduce sol-64 1 [2 3]))))
+  (testing 65
+    (is (= :map (sol-65 {:a 1, :b 2})))
+    (is (= :list (sol-65 (range (rand-int 20)))))
+    (is (= :vector (sol-65 [1 2 3 4 5 6])))
+    (is (= :set (sol-65 #{10 (rand-int 5)})))
+    (is (= [:map :set :vector :list] (map sol-65 [{} #{} [] ()])))))
  
 (comment 
   (do
