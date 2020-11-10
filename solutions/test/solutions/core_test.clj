@@ -254,7 +254,37 @@
     (is (= :list (sol-65 (range (rand-int 20)))))
     (is (= :vector (sol-65 [1 2 3 4 5 6])))
     (is (= :set (sol-65 #{10 (rand-int 5)})))
-    (is (= [:map :set :vector :list] (map sol-65 [{} #{} [] ()])))))
+    (is (= [:map :set :vector :list] (map sol-65 [{} #{} [] ()]))))
+  (testing 66
+    (is (= (sol-66 2 4) 2))
+    (is (= (sol-66 10 5) 5))
+    (is (= (sol-66 5 7) 1))
+    (is (= (sol-66 1023 858) 33)))
+  (testing 67
+    (is (= (sol-67 2) [2 3]))
+    (is (= (sol-67 5) [2 3 5 7 11]))
+    (is (= (last (sol-67 100)) 541)))
+  (testing 68
+    (is (= sol-68
+           (loop [x 5
+                  result []]
+             (if (> x 0)
+               (recur (dec x) (conj result (+ 2 x)))
+               result)))))
+  (testing 69
+    (is (= (sol-69 * {:a 2, :b 3, :c 4} {:a 2} {:b 2} {:c 5})
+           {:a 4, :b 6, :c 20}))
+    (is (= (sol-69 - {1 10, 2 20} {1 3, 2 10, 3 15})
+           {1 7, 2 10, 3 15}))
+    (is (= (sol-69 concat {:a [3], :b [6]} {:a [4 5], :c [8 9]} {:b [7]})
+           {:a [3 4 5], :b [6 7], :c [8 9]})))
+  (testing 70
+    (is (= (sol-70  "Have a nice day.")
+           ["a" "day" "Have" "nice"]))
+    (is (= (sol-70  "Clojure is a fun language!")
+           ["a" "Clojure" "fun" "is" "language"]))
+    (is (= (sol-70  "Fools fall for foolish follies.")
+           ["fall" "follies" "foolish" "Fools" "for"]))))
  
 (comment 
   (do

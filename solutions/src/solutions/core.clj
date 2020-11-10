@@ -106,7 +106,7 @@
               ([f v xs]
                (lazy-seq
                 (cons v
-                      (if (empty? xs) [] (r f (f v (first xs)) (rest xs))))))))        
+                      (if (empty? xs) [] (r f (f v (first xs)) (rest xs))))))))
 (def sol-61 #(apply hash-map (interleave %1 %2)))
 (def sol-62 (fn r [f v]
               (lazy-seq
@@ -121,10 +121,35 @@
                   (= base {}) :map
                   (= base #{}) :set
                   (= base '()) (if (reversible? a) :vector :list)))))
+(def sol-66 (fn gcd [a b]
+              (cond
+                (= a b) a
+                (< a b) (gcd a (- b a))
+                (> a b) (gcd (- a b) b))))
+(def sol-67 (fn [n]
+              (loop [x 3
+                     acc [2]]
+                (if (= n (count acc))
+                  acc
+                  (let [new-acc (if (not (empty? (filter #(= 0 (mod x %)) acc)))
+                                  acc
+                                  (conj acc x))]
+                    (recur (inc x) new-acc))))))
+(def sol-68 [7 6 5 4 3])
+(def sol-69 (fn [f & ms]
+              (reduce
+               (fn [m1 m2]
+                 (let [keys12 (clojure.set/intersection (set (keys m1)) (set (keys m2)))
+                       keys1 (clojure.set/difference (set (keys m1)) keys12)
+                       keys2 (clojure.set/difference (set (keys m2)) keys12)
+                       vals12 (map #(f (m1 %) (m2 %)) keys12)
+                       vals1 (map #(m1 %) keys1)
+                       vals2 (map #(m2 %) keys2)]
+                   (merge 
+                    (zipmap keys12 vals12)
+                    (zipmap keys1 vals1)
+                    (zipmap keys2 vals2))))
+               ms)))
+(def sol-70 #(sort-by clojure.string/upper-case (re-seq #"[A-Za-z]+" %)))
 
-(map sol-65 [{} #{} [] ()])
-
-(take-last 2 [1 2])
-
-(count (conj {} [1 2] [1 3]))
 
