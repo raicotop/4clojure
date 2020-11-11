@@ -145,11 +145,42 @@
                        vals12 (map #(f (m1 %) (m2 %)) keys12)
                        vals1 (map #(m1 %) keys1)
                        vals2 (map #(m2 %) keys2)]
-                   (merge 
+                   (merge
                     (zipmap keys12 vals12)
                     (zipmap keys1 vals1)
                     (zipmap keys2 vals2))))
                ms)))
 (def sol-70 #(sort-by clojure.string/upper-case (re-seq #"[A-Za-z]+" %)))
+(def sol-71 last)
+(def sol-72 #(reduce + %))
+(def sol-73 (fn [[r0 r1 r2]]
+              (->> [r0
+                    r1
+                    r2
+                    [(nth r0 0) (nth r1 0) (nth r2 0)]
+                    [(nth r0 1) (nth r1 1) (nth r2 1)]
+                    [(nth r0 2) (nth r1 2) (nth r2 2)]
+                    [(nth r0 0) (nth r1 1) (nth r2 2)]
+                    [(nth r0 2) (nth r1 1) (nth r2 0)]]
+                   (filter #(= (nth % 0) (nth % 1) (nth % 2)))
+                   (remove #(= :e (first %)))
+                   (ffirst))))
+(def sol-74 (fn [xs]
+              (->> (clojure.string/split xs #",")
+                   (map #(Integer/parseInt %))
+                   (filter #(= % (.intValue (Math/pow (.intValue (Math/sqrt %)) 2))))
+                   (clojure.string/join ","))))
+(def sol-75 (fn [n]
+              (let [gcd (fn gcd [a b]
+                          (cond
+                            (= a b) a
+                            (< a b) (gcd a (- b a))
+                            (> a b) (gcd (- a b) b)))]
+                (->> (range 1 (inc n))
+                     (filter #(= 1 (gcd n %)))
+                     (count)))))
 
 
+(sol-75 40)
+
+(range 1 2)

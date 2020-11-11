@@ -1,6 +1,6 @@
 (ns solutions.core-test
-   (:require [clojure.test :refer :all]
-             [solutions.core :refer :all]))
+  (:require [clojure.test :refer :all]
+            [solutions.core :refer :all]))
 
 (deftest testing-all-solutions
   (testing 1
@@ -134,9 +134,9 @@
     (is (= sol-35 (let [x 21] (let [y 3] (/ x y))))))
   (testing 36
     (let [sol (apply hash-map sol-36)]
-     (is (= 10 (let [x (sol 'x) y (sol 'y) z (sol 'z)] (+ x y))))
-     (is (= 4 (let [x (sol 'x) y (sol 'y) z (sol 'z)] (+ y z))))
-     (is (= 1 (let [x (sol 'x) y (sol 'y) z (sol 'z)] z)))))
+      (is (= 10 (let [x (sol 'x) y (sol 'y) z (sol 'z)] (+ x y))))
+      (is (= 4 (let [x (sol 'x) y (sol 'y) z (sol 'z)] (+ y z))))
+      (is (= 1 (let [x (sol 'x) y (sol 'y) z (sol 'z)] z)))))
   (testing 37
     (is (= sol-37 (apply str (re-seq #"[A-Z]+" "bA1B3Ce ")))))
   (testing 38
@@ -152,7 +152,7 @@
     (is (= (sol-40 0 [1 2 3]) [1 0 2 0 3]))
     (is (= (apply str (sol-40 ", " ["one" "two" "three"])) "one, two, three"))
     (is (= (sol-40 :z [:a :b :c :d]) [:a :z :b :z :c :z :d])))
-  (testing 41 
+  (testing 41
     (is (= (sol-41 [1 2 3 4 5 6 7 8] 3) [1 2 4 5 7 8]))
     (is (= (sol-41 [:a :b :c :d :e :f] 2) [:a :c :e]))
     (is (= (sol-41 [1 2 3 4 5 6] 4) [1 2 3 5 6])))
@@ -284,16 +284,57 @@
     (is (= (sol-70  "Clojure is a fun language!")
            ["a" "Clojure" "fun" "is" "language"]))
     (is (= (sol-70  "Fools fall for foolish follies.")
-           ["fall" "follies" "foolish" "Fools" "for"]))))
- 
-(comment 
+           ["fall" "follies" "foolish" "Fools" "for"])))
+  (testing 71
+    (is (= (sol-71 (sort (rest (reverse [2 5 4 1 3 6]))))
+           (-> [2 5 4 1 3 6] (reverse) (rest) (sort) (sol-71))
+           5)))
+  (testing 72
+    (is (= (sol-72 (map inc (take 3 (drop 2 [2 5 4 1 3 6]))))
+           (->> [2 5 4 1 3 6] (drop 2) (take 3) (map inc) (sol-72))
+           11)))
+  (testing 73
+    (is (= nil (sol-73 [[:e :e :e]
+                        [:e :e :e]
+                        [:e :e :e]])))
+    (is (= :x (sol-73 [[:x :e :o]
+                       [:x :e :e]
+                       [:x :e :o]])))
+    (is (= :o (sol-73 [[:e :x :e]
+                       [:o :o :o]
+                       [:x :e :x]])))
+    (is (= nil (sol-73 [[:x :e :o]
+                        [:x :x :e]
+                        [:o :x :o]])))
+    (is (= :x (sol-73 [[:x :e :e]
+                       [:o :x :e]
+                       [:o :e :x]])))
+    (is (= :o (sol-73 [[:x :e :o]
+                       [:x :o :e]
+                       [:o :e :x]])))
+    (is (= nil (sol-73 [[:x :o :x]
+                        [:x :o :x]
+                        [:o :x :o]]))))
+  (testing 74
+    (is (= (sol-74 "4,5,6,7,8,9") "4,9"))
+    (is (= (sol-74 "15,16,25,36,37") "16,25,36")))
+  (testing 75
+    (is (= (sol-75 1) 1))
+    (is (= (sol-75 10) (count '(1 3 7 9)) 4))
+    (is (= (sol-75 40) 16))
+    (is (= (sol-75 99) 60))))
+
+
+(comment
   (do
     (use 'solutions.core :reload)
     (use 'solutions.core-test :reload)
     (run-tests)))
 
+(first (first []))
 
 
 
 
-   
+
+
