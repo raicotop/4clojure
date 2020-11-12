@@ -179,8 +179,44 @@
                 (->> (range 1 (inc n))
                      (filter #(= 1 (gcd n %)))
                      (count)))))
+(def sol-76 [1 3 5 7 9 11])
+(def sol-77 (fn [words]
+              (->> (map #(hash-map (frequencies %) #{%}) words)
+                   (reduce #(merge-with into %1 %2))
+                   (map second)
+                   (filter #(< 1 (count %)))
+                   (set))))
+(def sol-78 (fn [f & args]
+              (loop [f #(apply f args)]
+                (if (fn? f)
+                  (recur (f))
+                  f))))
+(def sol-79 (fn [rows]
+              (let [gen-paths (fn [n]
+                                (loop [acc [[{0 0}]]]
+                                  (if (= n (count (first acc)))
+                                    acc
+                                    (recur (->> (map #(vector
+                                                       (conj % (hash-map
+                                                                (inc (ffirst (last %)))
+                                                                (second (first (last %)))))
+                                                       (conj % (hash-map
+                                                                (inc (ffirst (last %)))
+                                                                (inc (second (first (last %)))))))
+                                                     acc)
+                                                (reduce into))))))]
 
+                (->> (gen-paths (count rows))
+                     (map (fn [path]
+                            (map (fn [point]
+                                   (nth (nth rows (ffirst point)) (second (first point)))) 
+                                 path)))
+                     (map #(apply + %))
+                     (apply min)))))
+(def sol-80 (fn [n]
+              (->> (range 1 n)
+                   (filter #(= 0 (mod n %)))
+                   (reduce +)
+                   (= n))))
 
-(sol-75 40)
-
-(range 1 2)
+(sol-80 6)

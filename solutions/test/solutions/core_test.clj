@@ -322,7 +322,47 @@
     (is (= (sol-75 1) 1))
     (is (= (sol-75 10) (count '(1 3 7 9)) 4))
     (is (= (sol-75 40) 16))
-    (is (= (sol-75 99) 60))))
+    (is (= (sol-75 99) 60)))
+  (testing 76
+    (is (= sol-76
+           (letfn
+            [(foo [x y] #(bar (conj x y) y))
+             (bar [x y] (if (> (last x) 10)
+                          x
+                          #(foo x (+ 2 y))))]
+             (trampoline foo [] 1)))))
+  (testing 77
+    (is (= (sol-77 ["meat" "mat" "team" "mate" "eat"])
+           #{#{"meat" "team" "mate"}}))
+    (is (= (sol-77 ["veer" "lake" "item" "kale" "mite" "ever"])
+           #{#{"veer" "ever"} #{"lake" "kale"} #{"mite" "item"}})))
+  (testing 78
+    (is (= (letfn [(triple [x] #(sub-two (* 3 x)))
+                   (sub-two [x] #(stop? (- x 2)))
+                   (stop? [x] (if (> x 50) x #(triple x)))]
+             (sol-78 triple 2))
+           82))
+    (is (= (letfn [(my-even? [x] (if (zero? x) true #(my-odd? (dec x))))
+                   (my-odd? [x] (if (zero? x) false #(my-even? (dec x))))]
+             (map (partial sol-78 my-even?) (range 6)))
+           [true false true false true false])))
+  (testing 79
+    (is (= 7 (sol-79 '([1]
+                       [2 4]
+                       [5 1 4]
+                       [2 3 4 5]))))
+    (is (= 20 (sol-79 '([3]
+                        [2 4]
+                        [1 9 3]
+                        [9 9 2 4]
+                        [4 6 6 7 8]
+                        [5 7 3 5 1 4])))))
+  (testing 80
+    (is (= (sol-80 6) true))
+    (is (= (sol-80 7) false))
+    (is (= (sol-80 496) true))
+    (is (= (sol-80 500) false))
+    (is (= (sol-80 8128) true))))
 
 
 (comment
@@ -330,8 +370,6 @@
     (use 'solutions.core :reload)
     (use 'solutions.core-test :reload)
     (run-tests)))
-
-(first (first []))
 
 
 
