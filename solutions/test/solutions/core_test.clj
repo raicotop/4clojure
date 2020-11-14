@@ -362,7 +362,44 @@
     (is (= (sol-80 7) false))
     (is (= (sol-80 496) true))
     (is (= (sol-80 500) false))
-    (is (= (sol-80 8128) true))))
+    (is (= (sol-80 8128) true)))
+  (testing 81
+    (is (= (sol-81 #{0 1 2 3} #{2 3 4 5}) #{2 3}))
+    (is (= (sol-81 #{0 1 2} #{3 4 5}) #{}))
+    (is (= (sol-81 #{:a :b :c :d} #{:c :e :a :f :d}) #{:a :c :d})))
+  (testing 82
+    (is (= true (sol-82 #{"hat" "coat" "dog" "cat" "oat" "cot" "hot" "hog"})))
+    (is (= false (sol-82 #{"cot" "hot" "bat" "fat"})))
+    (is (= false (sol-82 #{"to" "top" "stop" "tops" "toss"})))
+    (is (= true (sol-82 #{"spout" "do" "pot" "pout" "spot" "dot"})))
+    (is (= true (sol-82 #{"share" "hares" "shares" "hare" "are"})))
+    (is (= false (sol-82 #{"share" "hares" "hare" "are"}))))
+  (testing 83
+    (is (= false (sol-83 false false)))
+    (is (= true (sol-83 true false)))
+    (is (= false (sol-83 true)))
+    (is (= true (sol-83 false true false)))
+    (is (= false (sol-83 true true true)))
+    (is (= true (sol-83 true true true false))))
+  (testing 84
+    (is (let [divides #{[8 4] [9 3] [4 2] [27 9]}]
+          (= (sol-84 divides) #{[4 2] [8 4] [8 2] [9 3] [27 9] [27 3]})))
+    (is (let [more-legs
+              #{["cat" "man"] ["man" "snake"] ["spider" "cat"]}]
+          (= (sol-84 more-legs)
+             #{["cat" "man"] ["cat" "snake"] ["man" "snake"]
+               ["spider" "cat"] ["spider" "man"] ["spider" "snake"]})))
+    (is (let [progeny
+              #{["father" "son"] ["uncle" "cousin"] ["son" "grandson"]}]
+          (= (sol-84 progeny)
+             #{["father" "son"] ["father" "grandson"]
+               ["uncle" "cousin"] ["son" "grandson"]}))))
+  (testing 85
+    (is (= (sol-85 #{1 :a}) #{#{1 :a} #{:a} #{} #{1}}))
+    (is (= (sol-85 #{}) #{#{}}))
+    (is (= (sol-85 #{1 2 3})
+           #{#{} #{1} #{2} #{3} #{1 2} #{1 3} #{2 3} #{1 2 3}}))
+    (is (= (count (sol-85 (into #{} (range 10)))) 1024))))
 
 
 (comment

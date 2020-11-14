@@ -209,7 +209,7 @@
                 (->> (gen-paths (count rows))
                      (map (fn [path]
                             (map (fn [point]
-                                   (nth (nth rows (ffirst point)) (second (first point)))) 
+                                   (nth (nth rows (ffirst point)) (second (first point))))
                                  path)))
                      (map #(apply + %))
                      (apply min)))))
@@ -218,5 +218,58 @@
                    (filter #(= 0 (mod n %)))
                    (reduce +)
                    (= n))))
+(def sol-81 (comp set filter))
+(def sol-82 (fn [words]
+              (let [permutations (fn permutations [s]
+                                   (lazy-seq
+                                    (if (seq (rest s))
+                                      (apply concat (for [x s]
+                                                      (map #(cons x %) (permutations (remove #{x} s)))))
+                                      [s])))
+                    similar? (fn [x y]
+                               (if (= (count x) (count y))
+                                 (>= 1 (->> (range (count x))
+                                            (remove #(= (nth x %) (nth y %)))
+                                            (count)))
+                                 (if (#{-1 1} (- (count x) (count y)))
+                                   (let [s (if (> (count x) (count y)) y x)
+                                         l (if (> (count x) (count y)) x y)]
+                                     (< 0 (->> (range (count l))
+                                               (map #(str (subs l 0 %) (subs l (inc %) (count l))))
+                                               (filter #(= s %))
+                                               (count))))
+                                   false)))]
+                (->> (permutations words)
+                     (map #(->> (range (dec (count %)))
+                                (map (fn [n] (similar? (nth % n) (nth % (inc n)))))))
+                     (map #(reduce (fn [x y] (and x y)) %))
+                     (filter #(= % true))
+                     (empty?)
+                     not))))
+(def sol-83 (fn [& bools] (= #{false true} (set bools))))
+(def sol-84 (fn [rels]
+              (let [add-transitive (fn add-transitive [m]
+                                     (->> (keys m)
+                                          (map #(hash-map % (->> (m %)
+                                                                 (map (fn [val] (m val)))
+                                                                 (reduce into))))
+                                          (reduce merge)
+                                          (merge-with into m)
+                                          ((fn [new-m]
+                                             (if (not= m new-m)
+                                               (add-transitive new-m)
+                                               new-m)))))]
+                (->> (map #(hash-map (first %) #{(second %)}) rels)
+                     (reduce #(merge-with into %1 %2))
+                     (add-transitive)
+                     (map #(->> (second %)
+                                (map (fn [val] [(first %) val]))))
+                     (reduce into)
+                     (set)))))
+(def sol-85 (fn powerset [s]
+              (reduce #(into %
+                             (for [subset %]
+                               (conj subset %2)))
+                      #{#{}}
+                      s)))
 
-(sol-80 6)
