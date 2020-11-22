@@ -272,4 +272,148 @@
                                (conj subset %2)))
                       #{#{}}
                       s)))
+(def sol-86 (fn [n]
+              (letfn [(nxt [x]
+                        (->> (str x)
+                             (map str)
+                             (map #(Integer/parseInt %))
+                             (map #(* % %))
+                             (reduce +)))]
+                (loop [x n
+                       acc #{}]
+                  (if (contains? acc x)
+                    (= 1 x)
+                    (recur (nxt x) (conj acc x)))))))
+(def sol-88 (fn [x y]
+              (clojure.set/difference
+               (clojure.set/union x y)
+               (clojure.set/intersection x y))))
+(def sol-89' (fn [xs]
+               (let [permutations (fn permutations [s]
+                                    (lazy-seq
+                                     (if (seq (rest s))
+                                       (apply concat (for [x s]
+                                                       (map #(cons x %) (permutations (remove #{x} s)))))
+                                       [s])))
+                     vs (set (flatten xs))
+                     es (->> (map reverse xs)
+                             (concat xs)
+                             (set))]
+                 (->> (permutations vs)
+                      (map #(interleave % %))
+                      (map #(drop 1 %))
+                      (map #(conj (vec %) (first %)))
+                      (map #(partition 2 %))
+                      (map (fn [path] (map #(contains? es %) path)))
+                      (map #(reduce (fn [a b] (and a b)) %))
+                      (reduce #(or %1 %2))))))
+(def sol-89 (fn [xs]
+              (loop [res []
+                     stack (map #(vector res %) (apply conj '() xs))
+                     remain xs]
+                (cond
+                  (= (count xs) (count res)) true
+                  (empty? stack) false
+                  (= res (first (first stack))) (let [e (second (first stack))
+                                                      e-directed (if (= (first e) (second (last res)))
+                                                                   e
+                                                                   (reverse e))
+                                                      remove-once (fn [pred coll]
+                                                                    ((fn inner [coll]
+                                                                       (lazy-seq
+                                                                        (when-let [[x & xs] (seq coll)]
+                                                                          (if (pred x)
+                                                                            xs
+                                                                            (cons x (inner xs))))))
+                                                                     coll))
+                                                      new-res (conj res e-directed)
+                                                      new-remain (remove-once (set [e (reverse e)]) remain)
+                                                      next-edges (fn [e es res]
+                                                                   (->> (filter #(or (= (last e) (first %))
+                                                                                     (= (last e) (second %))) es)
+                                                                        (map #(vector res %))))
+                                                      new-stack (let [next-es (next-edges e-directed new-remain new-res)]
+                                                                  (if (empty? next-es)
+                                                                    (rest stack)
+                                                                    (apply conj (rest stack) (next-edges e-directed new-remain new-res))))]
+                                                  (recur new-res new-stack new-remain))
+                  :else (recur (vec (drop-last res)) stack (conj remain (last res)))))))
+(def sol-90 (fn [a b]
+              (set (for [x a
+                         y b]
+                     [x y]))))
+(def sol-91 (fn [edges]
+              (loop [discovered-vertives (set (first edges))
+                     rst (rest edges)]
+                (let [new-discovered-edges (filter #(or (contains? discovered-vertives (first %))
+                                                        (contains? discovered-vertives (second %))) rst)
+                      new-discovered-vertives (-> new-discovered-edges flatten set)
+                      new-rst (remove (set new-discovered-edges) rst)]
+                  (cond
+                    (empty? new-rst) true
+                    (empty? new-discovered-edges) false
+                    :else (recur new-discovered-vertives new-rst))))))
+(def sol-92 (fn [s]
+              (let [values {"I" 1
+                            "IV" 4
+                            "V" 5
+                            "IX" 9
+                            "X" 10
+                            "XL" 40
+                            "L" 50
+                            "XC" 90
+                            "C" 100
+                            "CD" 400
+                            "D" 500
+                            "CM" 900
+                            "M" 1000}]
+                (loop [acc 0
+                       rst s]
+                  (if (empty? rst)
+                    acc
+                    (let [p (apply str (take 2 rst))
+                          interpreted-part (if (contains? values p) p (str (first p)))]
+                      (recur (+ acc (values interpreted-part)) 
+                             (drop (count interpreted-part) rst))))))))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

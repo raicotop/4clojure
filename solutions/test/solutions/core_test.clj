@@ -399,7 +399,53 @@
     (is (= (sol-85 #{}) #{#{}}))
     (is (= (sol-85 #{1 2 3})
            #{#{} #{1} #{2} #{3} #{1 2} #{1 3} #{2 3} #{1 2 3}}))
-    (is (= (count (sol-85 (into #{} (range 10)))) 1024))))
+    (is (= (count (sol-85 (into #{} (range 10)))) 1024)))
+  (testing 86
+    (is (= (sol-86 7) true))
+    (is (= (sol-86 986543210) true))
+    (is (= (sol-86 2) false))
+
+    (is (= (sol-86 3) false)))
+  (testing 88
+    (is (= (sol-88 #{1 2 3 4 5 6} #{1 3 5 7}) #{2 4 6 7}))
+    (is (= (sol-88 #{:a :b :c} #{}) #{:a :b :c}))
+    (is (= (sol-88 #{} #{4 5 6}) #{4 5 6}))
+    (is (= (sol-88 #{[1 2] [2 3]} #{[2 3] [3 4]}) #{[1 2] [3 4]})))
+  (testing 89
+    (is (= true (sol-89 [[:a :b]])))
+    (is (= false (sol-89 [[:a :a] [:b :b]])))
+    (is (= false (sol-89 [[:a :b] [:a :b] [:a :c] [:c :a]
+                          [:a :d] [:b :d] [:c :d]])))
+    (is (= true (sol-89 [[1 2] [2 3] [3 4] [4 1]])))
+    (is (= true (sol-89 [[:a :b] [:a :c] [:c :b] [:a :e]
+                         [:b :e] [:a :d] [:b :d] [:c :e]
+                         [:d :e] [:c :f] [:d :f]])))
+    (is (= false (sol-89 [[1 2] [2 3] [2 4] [2 5]]))))
+  (testing 90
+    (is (= (sol-90 #{"ace" "king" "queen"} #{"♠" "♥" "♦" "♣"})
+           #{["ace"   "♠"] ["ace"   "♥"] ["ace"   "♦"] ["ace"   "♣"]
+             ["king"  "♠"] ["king"  "♥"] ["king"  "♦"] ["king"  "♣"]
+             ["queen" "♠"] ["queen" "♥"] ["queen" "♦"] ["queen" "♣"]}))
+    (is (= (sol-90 #{1 2 3} #{4 5})
+           #{[1 4] [2 4] [3 4] [1 5] [2 5] [3 5]}))
+    (is (= 300 (count (sol-90 (into #{} (range 10))
+                              (into #{} (range 30)))))))
+  (testing 91
+    (is (= true (sol-91 #{[:a :a]})))
+    (is (= true (sol-91 #{[:a :b]})))
+    (is (= false (sol-91 #{[1 2] [2 3] [3 1]
+                           [4 5] [5 6] [6 4]})))
+    (is (= true (sol-91 #{[1 2] [2 3] [3 1]
+                          [4 5] [5 6] [6 4] [3 4]})))
+    (is (= false (sol-91 #{[:a :b] [:b :c] [:c :d]
+                           [:x :y] [:d :a] [:b :e]})))
+    (is (= true (sol-91 #{[:a :b] [:b :c] [:c :d]
+                          [:x :y] [:d :a] [:b :e] [:x :a]}))))
+  (testing 92
+    (is (= 14 (sol-92 "XIV")))
+    (is (= 827 (sol-92 "DCCCXXVII")))
+    (is (= 3999 (sol-92 "MMMCMXCIX")))
+    (is (= 48 (sol-92 "XLVIII")))))
 
 
 (comment
